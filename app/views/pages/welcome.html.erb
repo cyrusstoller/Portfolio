@@ -1,5 +1,44 @@
-<header class="jumbotron masthead">
-  <div class="inner">
-    <h1>Welcome!</h1>    
+<div class="row">
+  <div class="span7">
+    <table class="table table-bordered table-striped">
+      <tbody>
+        <tr>
+          <td>College</td>
+          <td><%= link_to "Swarthmore College", "http://www.swarthmore.edu/" %></td>
+          <td>Twitter</td>
+          <td><%= link_to "@cyrusstoller", "http://www.twitter.com/cyrusstoller" %></td>
+        </tr>
+        <tr>
+          <td>Majors</td>
+          <td>Computer Science and Math</td>
+          <td>IRC</td>
+          <td><i>Ask me :)</i></td>
+        </tr>
+        <tr>
+          <td>Github</td>
+          <td><%= link_to "https://github.com/cyrusstoller/", "https://github.com/cyrusstoller/" %></td>
+          <td>Stackoverflow</td>
+          <td><%= link_to "http://stackoverflow.com/users/686567/cyrus", "http://stackoverflow.com/users/686567/cyrus" %></td>
+        </tr>
+        <tr>
+          <td>Blog</td>
+          <td><%= link_to "http://blog.knolcano.com", "http://blog.knolcano.com" %></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</header>
+  <div class="span5">
+    <%= render :partial => 'programming_facts' %>
+
+    <h3>Favorite One Liners</h3>
+    <ul>
+      <li><p><code>$ cat /dev/urandom | hexdump -C | grep "ca fe"</code></p></li>
+      <li><p><code>$ python -m SimpleHTTPServer</code></p></li>
+      <li><p><code>$ echo {a,b,c}{a,b,c}{a,b,c}</code></p></li>
+      <li><p><code>$ man ascii</code></p></li>
+      <li><p><code>ABCDE * 4 = EDCBA</code> &rarr; <code>21978 * 4 = 87912</code></p></li>
+    </ul>
+  </div>
+</div>
