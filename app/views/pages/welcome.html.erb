@@ -1,26 +1,15 @@
 <div class="row">
   <div class="span7">
-    <h2>Bio</h2>
-    <p>
-      Hey! Good to meet you. My name is Cyrus.
-    </p>
-    <p>
-      I've always been a computer geek. I find it funny that my non-techie friends effectively use their laptops as glorified typewriters for 
-      word processing and browsing the web.
-    </p>
+    <%= render :partial => 'bio' %>
+
+    <p>Here are some projects that I've worked on recently:</p>
     
-    <table class="table table-bordered table-striped">
-      <tbody>
-        <tr>
-          <td>College</td>
-          <td><%= link_to "Swarthmore College", "http://www.swarthmore.edu/" %></td>
-        </tr>
-        <tr>
-          <td>Majors</td>
-          <td>Computer Science and Math</td>
-      </tbody>
-    </table>
+    <h3>Ruby on Rails Applications</h3>
+    
+    
+    <%= render :partial => 'iOS_projects' %>
   </div>
+
   <div class="span5">
     <%= render :partial => 'programming_facts' %>
     <%= render :partial => 'one_liners' %>
