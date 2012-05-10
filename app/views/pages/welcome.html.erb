@@ -4,22 +4,8 @@
 
     <p>Here are some projects that I've worked on recently:</p>
     
-    <h3>Polished Ruby on Rails Projects</h3>
-    <ul>
-      <li>Classy Letters</li>
-      <%= span_labels "AJAX", "CanCan", "Date.js", "Devise", "FactoryGirl", "jQuery", "Postgresql", "rspec", "Stripe" %>
-      <span class="label label-success">open source</span>
-      <li>Cyro Laughs</li>
-      <%= span_labels "Bookmarklet", "Devise", "FactoryGirl", "jQuery", "Nokogiri", "Postgresql", "Omniauth", "rspec", "YAJL" %>
-      <span class="label label-success">open source</span>
-      <li>Data Mustard</li>
-      <%= span_labels "Acts As Taggable", "AJAX", "CanCan", "Carrierwave", "Date.js", "Devise", "FactoryGirl", "Fog", "jBuilder", "jQuery", "MySQL", "Nokogiri", "Redcarpet", "Redis", "Resque", "rspec", "S3", "YAJL" %>
-      <li>KIT2Plus Survey <i class="icon-gift"></i></li>
-      <%= span_labels "Nokogiri", "twitter-bootstrap-rails", "Postgresql" %>
-      <span class="label label-success">open source</span>
-    </ul>
-    
-    
+    <%= render :partial => 'rails_projects' %>
+    <hr/>
     <%= render :partial => 'iOS_projects' %>
   </div>
 
