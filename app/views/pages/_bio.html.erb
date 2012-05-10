@@ -16,12 +16,12 @@
     <p>I'm glad to be back in California after a four year adventure on the East Coast.</p>
     
     <p>
-      <%= link_to "mailto:cyrus.stoller@gmail.com?subject=[cyrusstoller.com] Hey I saw your website" do %>
-        <span class="btn btn-primary"><i class="icon-envelope"></i> Email me</span>
+      <%= link_to "mailto:cyrus.stoller@gmail.com?subject=[cyrusstoller.com] Hey I saw your website", :class => "btn btn-primary" do %>
+        <i class="icon-envelope"></i> Email me
       <% end %>
-    
-      <%= link_to nil do %>
-        <span class="btn"><i class="icon-download-alt"></i> Résumé</span>
+      &nbsp;
+      <%= link_to nil, :class => "btn" do %>
+        <i class="icon-download-alt"></i> Résumé
       <% end %>
     </p>    
   </div>
