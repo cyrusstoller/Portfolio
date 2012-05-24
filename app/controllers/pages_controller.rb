@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def goodbye
   end
+
+  def projects
+  end
 end
