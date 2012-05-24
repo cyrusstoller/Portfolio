@@ -1,9 +1,9 @@
 CyrusStollerPortfolio::Application.routes.draw do
   root :to => 'pages#welcome'
 
-  match '/welcome'  => 'pages#welcome',  :as => "welcome",  :via => :get
-  match '/goodbye'  => 'pages#goodbye',  :as => "goodbye",  :via => :get
-  match '/projects' => 'pages#projects', :as => "projects", :via => :get
+  match '/welcome'     => 'pages#welcome',     :as => "welcome",     :via => :get
+  match '/goodbye'     => 'pages#goodbye',     :as => "goodbye",     :via => :get
+  match '/programming' => 'pages#programming', :as => "programming", :via => :get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

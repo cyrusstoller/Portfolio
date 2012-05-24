@@ -5,6 +5,6 @@ class PagesController < ApplicationController
   def goodbye
   end
 
-  def projects
+  def programming
   end
 end

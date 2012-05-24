@@ -16,9 +16,9 @@ describe PagesController do
     end
   end
 
-  describe "GET 'projects'" do
+  describe "GET 'programming'" do
     it "returns http success" do
-      get 'projects'
+      get 'programming'
       response.should be_success
     end
   end
