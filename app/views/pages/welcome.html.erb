@@ -1,14 +1,86 @@
 <div class="row">
   <div class="span7">
     <%= render :partial => 'bio' %>
-    <hr/>
-    <%= render :partial => 'rails_projects' %>
-    <hr/>
-    <%= render :partial => 'iOS_projects' %>
   </div>
 
   <div class="span5">
-    <%= render :partial => 'programming_facts' %>
-    <%= render :partial => 'one_liners' %>
+    <h3>Select Blog Posts</h3>
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>
+            <%= link_to "Hack your productivity", "http://blog.knolcano.com/hack-your-productivity" %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= link_to "Minimalist design is the way to go", "http://blog.knolcano.com/minimalist-design-is-the-way-to-go" %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= link_to "Really basic Github intro for non-techies", "http://blog.knolcano.com/really-basic-github-intro-for-cs-illiterates" %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= link_to "Fake it 'til you make it - web development for CS majors",   
+                        "http://blog.knolcano.com/cs-majors-blind-spot-basic-web-development" %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+        
+    <h3>Recent Programming Projects <small>&mdash; <%= link_to "See More Details", programming_path %></small></h3>
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>
+            <i class="icon-lock"></i> &nbsp;
+            <%= link_to "Data Mustard (live)", "http://datamustard.com" %>
+          </td>
+          <td>
+            Github for data analysis
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="icon-film"></i> &nbsp; 
+            <%= link_to "Cyro Laughs (live)", "http://cyrolaughs.com/" %>
+          </td>
+          <td>
+            Stumble Upon for video
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="icon-pencil"></i> &nbsp; 
+            <%= link_to "Classy Letters (live)", "http://classyletters.herokuapp.com/" %>
+          </td>
+          <td>
+            Handwritten letters without going to the post office
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="icon-resize-full"></i> &nbsp;
+            <%= link_to "Big Words (iOS)", "http://itunes.apple.com/us/app/big-words/id296290510" %>
+          </td>
+          <td>
+            Turn your iPhone/iPad into a giant sign
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="icon-plus-sign"></i> &nbsp;
+            <%= link_to "MathCards (iOS)", "http://itunes.apple.com/us/app/math-cards/id303293933" %>
+          </td>
+          <td>
+            Help kids learn arithmetic
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
   </div>
 </div>
