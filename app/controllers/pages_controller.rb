@@ -6,5 +6,6 @@ class PagesController < ApplicationController
   end
 
   def programming
+    @title = "Programming Projects"
   end
 end

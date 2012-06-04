@@ -13,4 +13,13 @@ module ApplicationHelper
       type.to_s
     end
   end
+  
+  def title
+    base_title = "Cyrus Stoller"
+    if @title.nil?
+      base_title
+    else
+      "#{@title} | #{base_title}"
+    end
+  end
 end
